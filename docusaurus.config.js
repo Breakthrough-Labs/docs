@@ -41,7 +41,7 @@ module.exports = {
         "How do I test the Uniswap V3 SDK locally?",
       ],
       messageInputPlaceholder:
-        "Ask anything about Uniswap V3",
+        "Ask anything about Uniswap V3!",
       ui: {
         modalContainer: {
           width: "1000px",
