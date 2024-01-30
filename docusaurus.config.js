@@ -21,6 +21,41 @@ module.exports = {
   organizationName: 'Uniswap', // Usually your GitHub org/user name.
   projectName: 'Uniswap-docs', // Usually your repo name.
   themeConfig: {
+    cookbookDocsBot: {
+      features: {
+        enableExplainSnippet: true,
+      },
+      dataSources: [
+        {
+          name: "UniswapV3",
+          hostname: "https://docs.uniswap.org",
+        }
+      ],
+      greetingMessage:
+        "Hi! Ask me anything about Uniswap. Here are some questions to get started.",
+      explainPromptTemplate: "Could you please elaborate on the content within the specified section from the Manta Docs? The section I'm referring to is:\n```\n$1\n```\n\nI'm seeking a comprehensive explanation to better understand the nuances, procedures, or concepts outlined in this particular segment. Your clarification will greatly assist in grasping the intricacies of the topic at hand.",
+      dialogTitle: "Ask Cookbook",
+      suggestions: [
+        "What's Uniswap V3?",
+        "How do I use the Uniswap V3 SDK?",
+        "How do I test the Uniswap V3 SDK locally?",
+      ],
+      messageInputPlaceholder:
+        "Ask anything about Uniswap V3!",
+      ui: {
+        modalContainer: {
+          width: "1000px",
+          height: "800px",
+          background: "var(--ifm-background-surface-color)",
+          className: "chefgpt-modal-container",
+        },
+      },
+      avatars: {
+        ChefGPT: "/img/uni_dark_icon.svg",
+        User: "https://cookbook.dev/img/Richard.png",
+      },
+      apiBaseUrl: "https://simple-web3-api.herokuapp.com",
+    },
     image: 'img/twitter_card_bg.jpg',
     prism: {
       additionalLanguages: ['solidity'],
