@@ -55,6 +55,7 @@ module.exports = {
         User: "https://cookbook.dev/img/Richard.png",
       },
       apiBaseUrl: "https://simple-web3-api.herokuapp.com",
+      apiKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NWMxOGQyNTA1MjA1MDZmZmEwMDhjMzYiLCJpYXQiOjE3MDcxODMzOTcsImV4cCI6MjAyMjc1OTM5N30.j1gfmvmmfz_cLwAheAI3_mrGiseW_KnGm_MQ1_VbeSY"
     },
     image: 'img/twitter_card_bg.jpg',
     prism: {
